@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Module that provides functions to hash and validate passwords using bcrypt.
+"""Module that provides functions to hash and validate passwords.
 """
 
 import bcrypt

@@ -3,12 +3,12 @@
 """
 import os
 from os import getenv
-from api.v1.views import app_views
 from flask import Flask, jsonify, abort, request
 from flask_cors import (CORS, cross_origin)
+
+from api.v1.views import app_views
 from api.v1.auth.auth import Auth
 from api.v1.auth.basic_auth import BasicAuth
-
 
 
 app = Flask(__name__)
@@ -45,7 +45,7 @@ def forbidden(error) -> str:
 
 @app.before_request
 def authenticate_user():
-    """Authenticates the user before each request.
+    """Authenticates a user before a request.
     """
     if auth:
         excluded_paths = [

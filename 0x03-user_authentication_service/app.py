@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""A simple Flask app with user authentication features.
+"""A basic Flask app.
 """
 from flask import Flask, jsonify, request, abort, redirect
 
